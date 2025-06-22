@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hmph fine</title>
+	<style>
+		p {
+            font-family: 'UglyDaveRegular';
+            font-size: 20px;
+            font-style: normal;
+            color: #000000;
+            text-shadow: 2px 2px 5px rgba(204, 204, 204, 1);
+            text-align: center;
+            opacity: 100;			
+		}
+
+		@font-face {
+			font-family: 'UglyDaveRegular';
+			src: url(fonts/UglyDaveRegular.woff2) format('woff2');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		.center-wrapper {
+		  height: 100vh;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		  align-items: center;
+		  gap: 10px;
+		  background: 
+		}
+
+		.button {
+		  cursor: pointer;
+		  position: relative;
+		  padding: 10px 24px;
+		  font-family: 'UglyDaveRegular';
+		  font-size: 18px;
+		  color: rgb(0, 0, 1);
+		  border: 2px solid rgb(0, 0, 1);
+		  border-radius: 34px;
+		  background-color: transparent;
+		  font-weight: 600;
+		  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+		  overflow: hidden;
+		}
+
+		.button::before {
+		  content: '';
+		  position: absolute;
+		  inset: 0;
+		  margin: auto;
+		  width: 50px;
+		  height: 50px;
+		  border-radius: inherit;
+		  scale: 0;
+		  z-index: -1;
+		  background-color: rgba(204, 204, 204, 1);
+		  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+		}
+
+		.button:hover::before {
+		  scale: 3;
+		}
+
+		.button:hover {
+		  color: #212121;
+		  scale: 1.1;
+		  box-shadow: 0 0px 20px rgba(232, 233, 235, 1);
+		}
+
+		.button:active {
+		  scale: 1;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="center-wrapper">
+		<img src="https://i.postimg.cc/J7QM5rQb/crying.gif" width="400" height="auto">
+		<p>nooooo, let's try again :( and this time, click on the "read letter" button okie?</p>
+		<a href="gift.html" class="button">go back because i don't take a no anyways.</a>
+	</div>
+</body>
+</html>
