@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>letter opened!</title>
+	<style>
+		p {
+            font-family: 'UglyDaveRegular';
+            font-size: 20px;
+            font-style: normal;
+            color: #000000;
+            text-shadow: 2px 2px 5px rgba(204, 204, 204, 1);
+            text-align: center;
+            opacity: 100;			
+		}
+
+		@font-face {
+			font-family: 'UglyDaveRegular';
+			src: url(fonts/UglyDaveRegular.woff2) format('woff2');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		.typewriter {
+			font-family: 'UglyDaveRegular';
+			font-size: 20px;
+			color: black;
+			white-space: pre-line;
+			border-right: 2px solid black;
+			overflow: hidden;
+			width: fit-content;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.paper {
+		  background: url('https://i.postimg.cc/R0xrRH6V/letterbg.jpg') no-repeat center center;
+		  background-size: cover;
+		  padding: 40px;
+		  border-radius: 12px;
+		  max-width: 700px;
+		  width: 90%;
+		  margin: auto;
+		  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+		  min-height: 400px;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		}
+
+		.typewriter-text {
+		  font-family: 'UglyDaveRegular', sans-serif;
+		  font-size: 20px;
+		  color: #222;
+		  white-space: pre-line;
+		  overflow: hidden;
+		  border-right: 2px solid #333;
+		  animation: blink 0.7s steps(1) infinite;
+		  width: 100%;
+		}
+
+		@keyframes blink {
+		  0% { border-color: transparent; }
+		  50% { border-color: #333; }
+		  100% { border-color: transparent; }
+		}
+
+		.center-wrapper {
+		  height: 100vh;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		  align-items: center;
+		  gap: 10px;
+		  background: 
+		}
+	</style>
+</head>
+<body>
+	<div class="paper center-wrapper">
+		<div id="letter" class="typewriter"></div>
+	</div>
+
+	<script>
+	  const letterText = `to the one and only hamizan fahmi,
+
+	happy turning 21 years old! how does it feel to be this ancient? have you gained wisdom now that you're officially a grandpa? kidding... all jokes aside, i wish you the happiest birthday, mizan! i pray that for the next days to come, you'll continue to strive with success and remain in good health for a long long time. i pray that you'll continue to do well emotionally, physically, mentally and always surrounded with the people who love and care for you, even the ones who now love you quietly, from a little farther away.
+
+	a little reminder from me (the most unworthy person in the world to give you a reminder to begin with), you're a really nice and kind-hearted person. you would go so far for the people you care about. which just proves that your love and care knows no bounds! you're really hardworking, passionate and super duper talented in a lot of stuff! how can someone be so cool, hello?! you've done a lot and went through countless tough times to get where you are. i'm so very proud of you! everyone is!
+
+	and more than anything, you are enough. you've never been the problem (at least in my eyes, pretty sure everyone would agree that you're way too nice sometimes). you’re always there when someone needs support, even if all you can offer are your signature “chill” and “relax” reminders in the middle of it all, that’s more than enough too. it’s comforting, even if you don’t always see it. though there's a lot i want to say, i think it's best for both our sakes for me to end the letter here.
+
+	i really hope you like this gift! i coded it myself with the help of my past lessons (and a little help from chatgpt, hehe). once again, happy 21st birthday, hamizan ;p
+
+	from the bottom of my heart,
+	syah :D`;
+
+
+	  const letterDiv = document.getElementById("letter");
+	  let index = 0;
+
+	  function typeLetter() {
+	    if (index < letterText.length) {
+	      letterDiv.textContent += letterText.charAt(index);
+	      index++;
+	      setTimeout(typeLetter, 30);
+	    }
+	  }
+
+	  setTimeout(typeLetter, 800);
+	</script>
+</body>
+</html>
+
+<!-- i still miss you sometimes, but quietly now. i'll keep on rooting for you even if i have to do it from afar. i hope i'll be given another chance of "us" in the future. maybe when i've finally healed, self-reflected, and change for the better. for me and you. there's a high chance you won't see this. if you did, don't bring it up unless it's the perfect time to. not sure when, not even sure if there will ever be another us again. but for now, see you soon? i hope so. -->
